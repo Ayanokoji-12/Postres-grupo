@@ -1,0 +1,164 @@
+=========================================================
+  PROYECTO: POSTRES DE YOGUR CON FRUTAS
+  GUÍA PARA COLOCAR LAS IMÁGENES
+=========================================================
+
+En este archivo encontrarás instrucciones claras sobre
+dónde colocar cada fotografía del proyecto.
+
+---------------------------------------------------------
+📂 imagenes/portada/
+---------------------------------------------------------
+Aquí van las imágenes principales de la portada.
+
+Nombres sugeridos:
+  - portada-principal.jpg   → Imagen grande de fondo de la portada
+  - portada-vaso.jpg        → Foto del vaso de yogur con frutas
+  - portada-paleta.jpg      → Foto de la paleta congelada
+
+Tamaño recomendado: al menos 1200 x 800 píxeles
+Formato: JPG o PNG (JPG recomendado para fotos)
+
+---------------------------------------------------------
+📂 imagenes/ensalada/
+---------------------------------------------------------
+Aquí van las fotos del PRODUCTO 1:
+Vaso de yogur con frutas
+
+Nombres sugeridos:
+  - vaso-principal.jpg       → Foto principal del vaso
+  - vaso-fresa.jpg           → Vaso con fresa
+  - vaso-platano.jpg         → Vaso con plátano
+  - vaso-arandano.jpg        → Vaso con arándano
+  - vaso-triple.jpg          → Vaso con las tres frutas
+
+---------------------------------------------------------
+📂 imagenes/paletas/
+---------------------------------------------------------
+Aquí van las fotos del PRODUCTO 2:
+Paletas congeladas de yogur con frutas
+
+Nombres sugeridos:
+  - paleta-principal.jpg     → Foto principal de la paleta
+  - paleta-fresa.jpg         → Paleta de fresa
+  - paleta-platano.jpg       → Paleta de plátano
+  - paleta-arandano.jpg      → Paleta de arándano
+  - paleta-triple.jpg        → Paleta triple fruta
+
+---------------------------------------------------------
+📂 imagenes/ingredientes/
+---------------------------------------------------------
+Aquí van las fotos de los ingredientes individuales.
+
+Nombres sugeridos:
+  - fresa.jpg                → Foto de fresas
+  - platano.jpg              → Foto de plátanos
+  - arandano.jpg             → Foto de arándanos
+  - yogur.jpg                → Foto del yogur natural
+  - chia.jpg                 → Foto de semillas de chía
+  - granola.jpg              → Foto de granola
+  - miel.jpg                 → Foto de miel
+
+---------------------------------------------------------
+📂 imagenes/comparacion/
+---------------------------------------------------------
+Aquí van las imágenes para la sección de comparación.
+
+Nombres sugeridos:
+  - postre-tradicional.jpg   → Foto de un postre tradicional
+  - nuestra-propuesta.jpg    → Foto de nuestra propuesta
+
+---------------------------------------------------------
+📂 imagenes/iconos/
+---------------------------------------------------------
+Aquí van íconos en formato PNG o SVG (pequeños, 64x64 o 128x128 px).
+
+Nombres sugeridos:
+  - icono-fresa.png
+  - icono-platano.png
+  - icono-arandano.png
+  - icono-yogur.png
+  - icono-chia.png
+  - icono-granola.png
+  - icono-miel.png
+
+---------------------------------------------------------
+📂 recursos/
+---------------------------------------------------------
+  - codigo-qr.png   → Aquí va el código QR cuando tengas la URL pública.
+                      Reemplaza el placeholder en index.html buscando
+                      la sección con id="seccion-qr".
+
+=========================================================
+¿CÓMO REEMPLAZAR UNA IMAGEN PLACEHOLDER POR UNA REAL?
+=========================================================
+
+1. Coloca tu foto en la carpeta correspondiente con el
+   nombre sugerido (por ejemplo: fresa.jpg en imagenes/ingredientes/).
+
+2. Abre index.html en un editor de texto.
+
+3. Busca el comentario <!-- IMAGEN: fresa --> o similar.
+
+4. Cambia la línea:
+      <div class="imagen-placeholder" ...>
+   por:
+      <img src="imagenes/ingredientes/fresa.jpg" alt="Fresas frescas">
+
+5. Guarda y recarga la página en el navegador.
+
+=========================================================
+¿CÓMO CAMBIAR LOS NOMBRES DE LOS INTEGRANTES?
+=========================================================
+
+Abre index.html y busca la sección con id="creadores".
+Verás los nombres listados. Reemplaza:
+  "Nombre del integrante 2"
+  "Nombre del integrante 3"
+  "Nombre del integrante 4"
+por los nombres reales.
+
+=========================================================
+¿CÓMO ABRIR Y PROBAR LA PÁGINA?
+=========================================================
+
+Opción 1 (más sencilla):
+  - Haz doble clic en index.html para abrirlo en el navegador.
+
+Opción 2 (recomendada para desarrollo):
+  - Instala la extensión "Live Server" en VS Code o Kiro.
+  - Haz clic derecho en index.html → "Open with Live Server".
+  - La página se recargará automáticamente al guardar cambios.
+
+=========================================================
+¿CÓMO PROBAR EN TAMAÑO CELULAR?
+=========================================================
+
+En Google Chrome o Edge:
+  1. Abre la página.
+  2. Presiona F12 (o Ctrl+Shift+I) para abrir las herramientas de desarrollo.
+  3. Haz clic en el ícono de celular/tablet (Toggle Device Toolbar).
+  4. Selecciona un dispositivo: iPhone, Pixel, Samsung, etc.
+  5. Prueba en distintos tamaños.
+
+=========================================================
+¿QUÉ FALTA PARA PUBLICAR Y CREAR EL QR?
+=========================================================
+
+1. Colocar las fotografías reales en sus carpetas.
+2. Publicar la página en un servidor web gratuito como:
+     - GitHub Pages: https://pages.github.com
+     - Netlify: https://netlify.com
+     - Vercel: https://vercel.com
+3. Una vez publicada, obtendrás una URL pública como:
+     https://tu-proyecto.netlify.app
+4. Con esa URL, genera el código QR en:
+     https://www.qr-code-generator.com
+     o  https://qr.io
+5. Descarga el QR como PNG y colócalo en: recursos/codigo-qr.png
+6. El placeholder del QR se reemplazará automáticamente.
+
+=========================================================
+  Proyecto Final 2026
+  Postres de yogur con frutas
+=========================================================

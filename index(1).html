@@ -1,0 +1,2079 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
+<meta
+name="description"
+content="Proyecto académico de dos postres elaborados con yogur y frutas: vaso de yogur con fresa, plátano y arándano; y paletas de yogur con fresa, plátano y lúcuma."
+>
+<meta
+name="author"
+content="Proyecto Final 2026"
+>
+<meta
+name="theme-color"
+content="#E8365D"
+>
+<title>
+Postres de Yogur y Frutas | Proyecto Final
+</title>
+<link
+rel="stylesheet"
+href="estilos/principal.css"
+>
+<link
+rel="stylesheet"
+href="estilos/animaciones.css"
+>
+<link
+rel="stylesheet"
+href="estilos/celular.css"
+>
+</head>
+<body>
+<!-- ============================================================
+BOTÓN SCROLL ARRIBA
+============================================================ -->
+<button
+id="scroll-arriba"
+aria-label="Volver al inicio"
+title="Volver al inicio"
+>
+↑
+</button>
+<!-- ============================================================
+NAVEGACIÓN
+============================================================ -->
+<nav
+id="navegacion"
+role="navigation"
+aria-label="Menú principal"
+>
+<div class="nav-contenido">
+<a
+href="#inicio"
+class="nav-logo"
+aria-label="Inicio"
+>
+🍓 Postres <span>Yogur</span>
+</a>
+<ul
+class="nav-menu"
+id="menu-navegacion"
+role="menubar"
+>
+<li role="none">
+<a href="#inicio" role="menuitem">
+Inicio
+</a>
+</li>
+<li role="none">
+<a href="#postres" role="menuitem">
+Nuestros Postres
+</a>
+</li>
+<li role="none">
+<a href="#recomendador" role="menuitem">
+Descubre tu Sabor
+</a>
+</li>
+<li role="none">
+<a href="#sabores" role="menuitem">
+Ingredientes
+</a>
+</li>
+<li role="none">
+<a href="#por-que" role="menuitem">
+¿Por qué los Creamos?
+</a>
+</li>
+<li role="none">
+<a href="#comparacion" role="menuitem">
+Comparación
+</a>
+</li>
+<li role="none">
+<a href="#creadores" role="menuitem">
+Creadores
+</a>
+</li>
+</ul>
+<button
+class="nav-hamburguesa"
+id="boton-hamburguesa"
+aria-label="Abrir menú"
+aria-expanded="false"
+aria-controls="menu-navegacion"
+>
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</nav>
+<!-- ============================================================
+SECCIÓN 1: PORTADA
+============================================================ -->
+<section
+id="inicio"
+aria-label="Portada principal"
+>
+<div
+class="hero-decoracion hero-decoracion-1"
+aria-hidden="true"
+></div>
+<div
+class="hero-decoracion hero-decoracion-2"
+aria-hidden="true"
+></div>
+<span
+class="fruta-decorativa fruta-decorativa-1"
+aria-hidden="true"
+style="top:15%;left:5%"
+>
+🍓
+</span>
+<span
+class="fruta-decorativa fruta-decorativa-2"
+aria-hidden="true"
+style="top:60%;left:3%"
+>
+🫐
+</span>
+<span
+class="fruta-decorativa fruta-decorativa-3"
+aria-hidden="true"
+style="top:20%;right:4%"
+>
+🍌
+</span>
+<span
+class="fruta-decorativa fruta-decorativa-4"
+aria-hidden="true"
+style="bottom:20%;right:6%"
+>
+🟡
+</span>
+<div class="contenedor">
+<div class="hero-contenido">
+<!-- TEXTO HERO -->
+<div class="hero-texto">
+<div class="hero-etiquetas">
+<span class="etiqueta etiqueta-fresa">
+🥗 Vaso de Yogur
+</span>
+<span class="etiqueta etiqueta-arandano">
+🍦 Paletas Congeladas
+</span>
+</div>
+<h1 class="hero-titulo">
+Una forma
+<span class="acento-fresa">
+diferente
+</span>
+de disfrutar la
+<span class="acento-arandano">
+fruta
+</span>
+</h1>
+<p class="hero-subtitulo">
+Dos productos. Dos combinaciones.
+Una misma propuesta.
+</p>
+<div
+class="hero-frutas"
+aria-label="Sabores principales"
+>
+<span class="fruta-chip">
+🍓 Fresa
+</span>
+<span class="fruta-chip">
+🍌 Plátano
+</span>
+<span class="fruta-chip">
+🫐 Arándano
+</span>
+<span class="fruta-chip">
+🟡 Lúcuma
+</span>
+</div>
+<p class="hero-descripcion">
+Descubre nuestra propuesta de postres
+elaborados con yogur y frutas.
+El vaso combina fresa, plátano y arándano,
+mientras que las paletas combinan fresa,
+plátano y lúcuma.
+</p>
+<div class="hero-botones">
+<button
+id="btn-ver-postres"
+class="btn btn-primario btn-grande"
+>
+🍽️ Conocer Nuestros Postres
+</button>
+<button
+id="btn-descubrir-sabor"
+class="btn btn-secundario btn-grande"
+>
+✨ Descubrir Mi Sabor
+</button>
+</div>
+</div>
+<!-- TARJETAS PRODUCTOS -->
+<div
+class="hero-productos"
+aria-label="Nuestros dos productos"
+>
+<article class="hero-producto-card">
+<div
+class="imagen-placeholder imagen-placeholder-vaso"
+role="img"
+aria-label="Foto del vaso de yogur con frutas"
+>
+<span class="emoji-placeholder">
+🥗
+</span>
+<strong>
+Vaso de Yogur
+</strong>
+<span>
+Fresa · Plátano · Arándano
+</span>
+</div>
+<div style="padding:16px 8px 0">
+<h4>
+Vaso de Yogur con Frutas
+</h4>
+<p>
+Cremoso · Por capas · Personalizable
+</p>
+</div>
+</article>
+<article class="hero-producto-card">
+<div
+class="imagen-placeholder imagen-placeholder-paleta"
+role="img"
+aria-label="Foto de las paletas congeladas"
+>
+<span class="emoji-placeholder">
+🍦
+</span>
+<strong>
+Paletas de Yogur
+</strong>
+<span>
+Fresa · Plátano · Lúcuma
+</span>
+</div>
+<div style="padding:16px 8px 0">
+<h4>
+Paletas Congeladas
+</h4>
+<p>
+Cremosas · Frías · Refrescantes
+</p>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+SECCIÓN 2: NUESTROS DOS POSTRES
+============================================================ -->
+<section
+id="postres"
+class="seccion"
+aria-label="Nuestros dos postres"
+>
+<div class="contenedor">
+<div class="seccion-titulo animar-scroll">
+<h2>
+Dos maneras de disfrutar nuestra propuesta
+</h2>
+<p>
+Dos productos elaborados a base de yogur,
+cada uno con su propia combinación de sabores.
+</p>
+</div>
+<div class="postres-grid">
+<!-- PRODUCTO 1 -->
+<article class="postre-card animar-scroll-izq">
+<div class="postre-imagen-contenedor">
+<div
+class="imagen-placeholder imagen-placeholder-vaso"
+role="img"
+aria-label="Foto del vaso de yogur con frutas"
+>
+<span class="emoji-placeholder">
+🥗
+</span>
+<strong>
+Vaso de Yogur con Frutas
+</strong>
+<span>
+imagenes/ensalada/vaso-principal.jpg
+</span>
+</div>
+<span class="postre-badge">
+Producto 1
+</span>
+</div>
+<div class="postre-cuerpo">
+<span
+class="postre-icono"
+aria-hidden="true"
+>
+🥗
+</span>
+<span class="etiqueta etiqueta-fresa">
+Vaso / Ensalada
+</span>
+<h3>
+Vaso de Yogur con Frutas
+</h3>
+<p>
+Una combinación de yogur natural con
+<strong>fresa, plátano y arándano</strong>,
+presentada en capas y acompañada
+opcionalmente de chía y granola.
+</p>
+<div
+class="ingredientes-chips"
+aria-label="Ingredientes"
+>
+<span class="ingrediente-chip">
+🥛 Yogur
+</span>
+<span class="ingrediente-chip">
+🍓 Fresa
+</span>
+<span class="ingrediente-chip">
+🍌 Plátano
+</span>
+<span class="ingrediente-chip">
+🫐 Arándano
+</span>
+<span class="ingrediente-chip">
+🌱 Chía
+</span>
+<span class="ingrediente-chip">
+🌾 Granola
+</span>
+</div>
+<ul class="caracteristicas-lista">
+<li class="caracteristica-item">
+Textura cremosa
+</li>
+<li class="caracteristica-item">
+Frutas visibles
+</li>
+<li class="caracteristica-item">
+Presentación por capas
+</li>
+<li class="caracteristica-item">
+Posibilidad de personalizar toppings
+</li>
+<li class="caracteristica-item">
+Presentación individual
+</li>
+</ul>
+</div>
+</article>
+<!-- PRODUCTO 2 -->
+<article class="postre-card animar-scroll-der">
+<div class="postre-imagen-contenedor">
+<div
+class="imagen-placeholder imagen-placeholder-paleta"
+role="img"
+aria-label="Foto de las paletas congeladas de yogur"
+>
+<span class="emoji-placeholder">
+🍦
+</span>
+<strong>
+Paletas de Yogur con Frutas
+</strong>
+<span>
+imagenes/paletas/paleta-principal.jpg
+</span>
+</div>
+<span class="postre-badge">
+Producto 2
+</span>
+</div>
+<div class="postre-cuerpo">
+<span
+class="postre-icono"
+aria-hidden="true"
+>
+🍦
+</span>
+<span class="etiqueta etiqueta-arandano">
+Paleta Congelada
+</span>
+<h3>
+Paletas de Yogur con Frutas
+</h3>
+<p>
+Una presentación congelada elaborada
+a base de yogur con
+<strong>fresa, plátano y lúcuma</strong>,
+buscando una combinación de sabores
+dulces, suaves y cremosos.
+</p>
+<div
+class="ingredientes-chips"
+aria-label="Ingredientes"
+>
+<span class="ingrediente-chip">
+🥛 Yogur
+</span>
+<span class="ingrediente-chip">
+🍓 Fresa
+</span>
+<span class="ingrediente-chip">
+🍌 Plátano
+</span>
+<span class="ingrediente-chip">
+🟡 Lúcuma
+</span>
+</div>
+<ul class="caracteristicas-lista">
+<li class="caracteristica-item">
+Presentación congelada
+</li>
+<li class="caracteristica-item">
+Textura cremosa y refrescante
+</li>
+<li class="caracteristica-item">
+Combinación de sabores suaves
+</li>
+<li class="caracteristica-item">
+Formato individual
+</li>
+<li class="caracteristica-item">
+Presentación atractiva
+</li>
+</ul>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ============================================================
+SECCIÓN 3: RECOMENDADOR
+============================================================ -->
+<section
+id="recomendador"
+class="seccion"
+aria-label="Recomendador de postres"
+>
+<span
+class="fruta-decorativa"
+aria-hidden="true"
+style="top:5%;right:2%;font-size:3rem;opacity:.1"
+>
+🍓
+</span>
+<span
+class="fruta-decorativa"
+aria-hidden="true"
+style="bottom:5%;left:2%;font-size:3rem;opacity:.1"
+>
+🟡
+</span>
+<div class="contenedor">
+<div class="seccion-titulo animar-scroll">
+<h2>
+¿Cuál va más contigo?
+</h2>
+<p>
+Responde unas preguntas y descubre
+cuál de nuestros dos productos se adapta
+mejor a tus preferencias.
+</p>
+</div>
+<div class="recomendador-interior">
+<div
+class="cuestionario"
+id="cuestionario"
+role="form"
+aria-label="Cuestionario de preferencias"
+>
+<div
+class="barra-progreso-contenedor"
+role="progressbar"
+aria-valuenow="0"
+aria-valuemin="0"
+aria-valuemax="100"
+aria-label="Progreso"
+>
+<div
+class="barra-progreso-relleno"
+id="barra-progreso-relleno"
+style="width:0%"
+></div>
+</div>
+<div
+class="cuestionario-progreso"
+aria-hidden="true"
+>
+<span class="progreso-punto activo"></span>
+<span class="progreso-punto"></span>
+<span class="progreso-punto"></span>
+<span class="progreso-punto"></span>
+</div>
+<!-- PREGUNTA 1 -->
+<fieldset
+class="pregunta visible"
+id="pregunta-1"
+>
+<p class="pregunta-numero">
+Pregunta 1 de 4
+</p>
+<legend>
+<h3>
+¿Qué tipo de postre prefieres?
+</h3>
+</legend>
+<div class="opciones-grupo">
+<label
+class="opcion-label"
+for="p1-cremoso"
+>
+<input
+class="opcion-radio"
+type="radio"
+id="p1-cremoso"
+name="pregunta1"
+value="cremoso"
+>
+<span
+class="opcion-icono"
+aria-hidden="true"
+>
+🥗
+</span>
+Cremoso y con frutas
+</label>
+<label
+class="opcion-label"
+for="p1-frio"
+>
+<input
+class="opcion-radio"
+type="radio"
+id="p1-frio"
+name="pregunta1"
+value="frio"
+>
+<span
+class="opcion-icono"
+aria-hidden="true"
+>
+🍦
+</span>
+Frío y refrescante
+</label>
+<label
+class="opcion-label"
+for="p1-ambos"
+>
+<input
+class="opcion-radio"
+type="radio"
+id="p1-ambos"
+name="pregunta1"
+value="ambos"
+>
+<span
+class="opcion-icono"
+aria-hidden="true"
+>
+❤️
+</span>
+Me gustan ambos
+</label>
+</div>
+<div class="pregunta-nav">
+<span></span>
+<button
+type="button"
+class="btn btn-primario"
+id="btn-siguiente-1"
+>
+Siguiente →
+</button>
+</div>
+</fieldset>
+<!-- PREGUNTA 2 -->
+<fieldset
+class="pregunta"
+id="pregunta-2"
+>
+<p class="pregunta-numero">
+Pregunta 2 de 4
+</p>
+<legend>
+<h3>
+¿Cómo prefieres el sabor?
+</h3>
+</legend>
+<div class="opciones-grupo">
+<label
+class="opcion-label"
+for="p2-dulce"
+>
+<input
+class="opcion-radio"
+type="radio"
+id="p2-dulce"
+name="pregunta2"
+value="dulce"
+>
+<span
+class="opcion-icono"
+aria-hidden="true"
+>
+🍯
+</span>
+Dulce y suave
+</label>
+<label
+class="opcion-label"
+for="p2-equilibrado"
+>
+<input
+class="opcion-radio"
+type="radio"
+id="p2-equilibrado"
+name="pregunta2"
+value="equilibrado"
+>
+<span
+class="opcion-icono"
+aria-hidden="true"
+>
+⚖️
+</span>
+Equilibrado
+</label>
+<label
+class="opcion-label"
+for="p2-frutal"
+>
+<input
+class="opcion-radio"
+type="radio"
+id="p2-frutal"
+name="pregunta2"
+value="frutal"
+>
+<span
+class="opcion-icono"
+aria-hidden="true"
+>
+🍓
+</span>
+Muy frutal
+</label>
+<label
+class="opcion-label"
+for="p2-acido"
+>
+<input
+class="opcion-radio"
+type="radio"
+id="p2-acido"
+name="pregunta2"
+value="acido"
+>
+<span
+class="opcion-icono"
+aria-hidden="true"
+>
+🫐
+</span>
+Con un ligero contraste ácido
+</label>
+</div>
+<div class="pregunta-nav">
+<button
+type="button"
+class="btn btn-contorno"
+id="btn-anterior-2"
+>
+← Anterior
+</button>
+<button
+type="button"
+class="btn btn-primario"
+id="btn-siguiente-2"
+>
+Siguiente →
+</button>
+</div>
+</fieldset>
+<!-- PREGUNTA 3 -->
+<fieldset
+class="pregunta"
+id="pregunta-3"
+>
+<p class="pregunta-numero">
+Pregunta 3 de 4
+</p>
+<legend>
+<h3>
+¿Cuál sabor prefieres?
+</h3>
+</legend>
+<div class="opciones-grupo">
+<label
+class="opcion-label"
+for="p3-fresa"
+>
+<input
+class="opcion-radio"
+type="radio"
+id="p3-fresa"
+name="pregunta3"
+value="fresa"
+>
+<span
+class="opcion-icono"
+aria-hidden="true"
+>
+🍓
+</span>
+Fresa
+</label>
+<label
+class="opcion-label"
+for="p3-platano"
+>
+<input
+class="opcion-radio"
+type="radio"
+id="p3-platano"
+name="pregunta3"
+value="platano"
+>
+<span
+class="opcion-icono"
+aria-hidden="true"
+>
+🍌
+</span>
+Plátano
+</label>
+<label
+class="opcion-label"
+for="p3-arandano"
+>
+<input
+class="opcion-radio"
+type="radio"
+id="p3-arandano"
+name="pregunta3"
+value="arandano"
+>
+<span
+class="opcion-icono"
+aria-hidden="true"
+>
+🫐
+</span>
+Arándano
+</label>
+<label
+class="opcion-label"
+for="p3-lucuma"
+>
+<input
+class="opcion-radio"
+type="radio"
+id="p3-lucuma"
+name="pregunta3"
+value="lucuma"
+>
+<span
+class="opcion-icono"
+aria-hidden="true"
+>
+🟡
+</span>
+Lúcuma
+</label>
+<label
+class="opcion-label"
+for="p3-todas"
+>
+<input
+class="opcion-radio"
+type="radio"
+id="p3-todas"
+name="pregunta3"
+value="todas"
+>
+<span
+class="opcion-icono"
+aria-hidden="true"
+>
+❤️
+</span>
+Me gustan varias opciones
+</label>
+</div>
+<div class="pregunta-nav">
+<button
+type="button"
+class="btn btn-contorno"
+id="btn-anterior-3"
+>
+← Anterior
+</button>
+<button
+type="button"
+class="btn btn-primario"
+id="btn-siguiente-3"
+>
+Siguiente →
+</button>
+</div>
+</fieldset>
+<!-- PREGUNTA 4 -->
+<fieldset
+class="pregunta"
+id="pregunta-4"
+>
+<p class="pregunta-numero">
+Pregunta 4 de 4
+</p>
+<legend>
+<h3>
+¿Qué textura prefieres?
+</h3>
+</legend>
+<div class="opciones-grupo">
+<label
+class="opcion-label"
+for="p4-cremosa"
+>
+<input
+class="opcion-radio"
+type="radio"
+id="p4-cremosa"
+name="pregunta4"
+value="cremosa"
+>
+<span
+class="opcion-icono"
+aria-hidden="true"
+>
+🥛
+</span>
+Cremosa
+</label>
+<label
+class="opcion-label"
+for="p4-trozos"
+>
+<input
+class="opcion-radio"
+type="radio"
+id="p4-trozos"
+name="pregunta4"
+value="trozos"
+>
+<span
+class="opcion-icono"
+aria-hidden="true"
+>
+🍓
+</span>
+Con trozos de fruta
+</label>
+<label
+class="opcion-label"
+for="p4-crujiente"
+>
+<input
+class="opcion-radio"
+type="radio"
+id="p4-crujiente"
+name="pregunta4"
+value="crujiente"
+>
+<span
+class="opcion-icono"
+aria-hidden="true"
+>
+🌾
+</span>
+Crujiente
+</label>
+<label
+class="opcion-label"
+for="p4-congelada"
+>
+<input
+class="opcion-radio"
+type="radio"
+id="p4-congelada"
+name="pregunta4"
+value="congelada"
+>
+<span
+class="opcion-icono"
+aria-hidden="true"
+>
+❄️
+</span>
+Congelada
+</label>
+</div>
+<div class="pregunta-nav">
+<button
+type="button"
+class="btn btn-contorno"
+id="btn-anterior-4"
+>
+← Anterior
+</button>
+<button
+type="button"
+class="btn btn-primario btn-grande"
+id="btn-descubrir"
+>
+✨ Descubrir Mi Postre
+</button>
+</div>
+</fieldset>
+</div>
+<!-- RESULTADO -->
+<div
+id="resultado-recomendador"
+role="region"
+aria-live="polite"
+aria-label="Resultado de tu recomendación"
+>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+SECCIÓN 4: SABORES
+============================================================ -->
+<section
+id="sabores"
+class="seccion"
+aria-label="Nuestros sabores"
+>
+<div class="contenedor">
+<div class="seccion-titulo animar-scroll">
+<h2>
+Conoce nuestros sabores
+</h2>
+<p>
+Cuatro sabores utilizados en diferentes
+combinaciones dentro de nuestros dos productos.
+</p>
+</div>
+<div class="sabores-grid">
+<!-- FRESA -->
+<article
+class="sabor-card animar-scroll retraso-1"
+aria-label="Sabor fresa"
+>
+<div class="sabor-imagen">
+<div
+class="imagen-placeholder imagen-placeholder-fresa"
+style="min-height:200px;border-radius:24px 24px 0 0"
+role="img"
+aria-label="Foto de fresas"
+>
+<span
+class="emoji-placeholder"
+style="font-size:4rem"
+>
+🍓
+</span>
+<span>
+imagenes/ingredientes/fresa.jpg
+</span>
+</div>
+</div>
+<div class="sabor-cuerpo">
+<span
+class="sabor-emoji"
+aria-hidden="true"
+>
+🍓
+</span>
+<h3>
+Fresa
+</h3>
+<p>
+Su sabor frutal y su color rojo
+aportan una presentación atractiva.
+</p>
+<ul class="sabor-datos">
+<li class="sabor-dato">
+🎨 Color atractivo
+</li>
+<li class="sabor-dato">
+🍊 Aporta vitamina C
+</li>
+<li class="sabor-dato">
+🌿 Contiene fibra
+</li>
+<li class="sabor-dato">
+🥗🍦 Presente en ambos productos
+</li>
+</ul>
+</div>
+</article>
+<!-- PLÁTANO -->
+<article
+class="sabor-card animar-scroll retraso-2"
+aria-label="Sabor plátano"
+>
+<div class="sabor-imagen">
+<div
+class="imagen-placeholder imagen-placeholder-platano"
+style="min-height:200px;border-radius:24px 24px 0 0"
+role="img"
+aria-label="Foto de plátanos"
+>
+<span
+class="emoji-placeholder"
+style="font-size:4rem"
+>
+🍌
+</span>
+<span>
+imagenes/ingredientes/platano.jpg
+</span>
+</div>
+</div>
+<div class="sabor-cuerpo">
+<span
+class="sabor-emoji"
+aria-hidden="true"
+>
+🍌
+</span>
+<h3>
+Plátano
+</h3>
+<p>
+Proporciona dulzor natural y contribuye
+a conseguir una textura cremosa.
+</p>
+<ul class="sabor-datos">
+<li class="sabor-dato">
+🍬 Dulzor natural
+</li>
+<li class="sabor-dato">
+🧈 Textura cremosa
+</li>
+<li class="sabor-dato">
+⚡ Aporta potasio
+</li>
+<li class="sabor-dato">
+🥗🍦 Presente en ambos productos
+</li>
+</ul>
+</div>
+</article>
+<!-- ARÁNDANO -->
+<article
+class="sabor-card animar-scroll retraso-3"
+aria-label="Sabor arándano"
+>
+<div class="sabor-imagen">
+<div
+class="imagen-placeholder imagen-placeholder-arandano"
+style="min-height:200px;border-radius:24px 24px 0 0"
+role="img"
+aria-label="Foto de arándanos"
+>
+<span
+class="emoji-placeholder"
+style="font-size:4rem"
+>
+🫐
+</span>
+<span>
+imagenes/ingredientes/arandano.jpg
+</span>
+</div>
+</div>
+<div class="sabor-cuerpo">
+<span
+class="sabor-emoji"
+aria-hidden="true"
+>
+🫐
+</span>
+<h3>
+Arándano
+</h3>
+<p>
+Aporta contraste de sabor y un color
+característico al vaso de yogur.
+</p>
+<ul class="sabor-datos">
+<li class="sabor-dato">
+🎨 Color morado intenso
+</li>
+<li class="sabor-dato">
+🌿 Contiene fibra
+</li>
+<li class="sabor-dato">
+🔬 Contiene antocianinas
+</li>
+<li class="sabor-dato">
+🥗 Utilizado en el vaso
+</li>
+</ul>
+</div>
+</article>
+<!-- LÚCUMA -->
+<article
+class="sabor-card animar-scroll retraso-4"
+aria-label="Sabor lúcuma"
+>
+<div class="sabor-imagen">
+<div
+class="imagen-placeholder imagen-placeholder-lucuma"
+style="min-height:200px;border-radius:24px 24px 0 0"
+role="img"
+aria-label="Foto de lúcuma"
+>
+<span
+class="emoji-placeholder"
+style="font-size:4rem"
+>
+🟡
+</span>
+<span>
+imagenes/ingredientes/lucuma.jpg
+</span>
+</div>
+</div>
+<div class="sabor-cuerpo">
+<span
+class="sabor-emoji"
+aria-hidden="true"
+>
+🟡
+</span>
+<h3>
+Lúcuma
+</h3>
+<p>
+Su sabor dulce y característico complementa
+la textura cremosa de las paletas de yogur.
+</p>
+<ul class="sabor-datos">
+<li class="sabor-dato">
+🍯 Sabor dulce y suave
+</li>
+<li class="sabor-dato">
+🧈 Combina con texturas cremosas
+</li>
+<li class="sabor-dato">
+🇵🇪 Fruta tradicional del Perú
+</li>
+<li class="sabor-dato">
+🍦 Utilizada en las paletas
+</li>
+</ul>
+</div>
+</article>
+</div>
+<!-- INFORMACIÓN SOBRE LOS SABORES -->
+<aside
+class="citricos-card animar-scroll"
+aria-label="Información sobre nuestros sabores"
+>
+<div
+class="citricos-icono"
+aria-hidden="true"
+>
+🍓🍌🫐🟡
+</div>
+<div class="citricos-texto">
+<h4>
+Dos combinaciones diferentes
+</h4>
+<p>
+Nuestro <strong>vaso de yogur</strong>
+combina fresa, plátano y arándano.
+</p>
+<p>
+Nuestras <strong>paletas de yogur</strong>
+combinan fresa, plátano y lúcuma.
+Esto permite ofrecer dos experiencias
+de sabor diferentes dentro de un mismo proyecto.
+</p>
+</div>
+</aside>
+</div>
+</section>
+<!-- ============================================================
+SECCIÓN 5: NUESTRA BASE
+============================================================ -->
+<section
+id="base"
+class="seccion"
+aria-label="Base e ingredientes"
+>
+<div class="contenedor">
+<div class="seccion-titulo animar-scroll">
+<h2>
+¿En qué se basan nuestros postres?
+</h2>
+<p>
+Los ingredientes que dan forma a
+nuestras dos presentaciones.
+</p>
+</div>
+<div class="base-grid">
+<article
+class="base-card animar-scroll retraso-1"
+>
+<span
+class="base-emoji"
+aria-hidden="true"
+>
+🥛
+</span>
+<h4>
+Yogur Natural
+</h4>
+<p>
+Base cremosa utilizada en ambos productos.
+Aporta textura y consistencia.
+</p>
+</article>
+<article
+class="base-card animar-scroll retraso-2"
+>
+<span
+class="base-emoji"
+aria-hidden="true"
+>
+🍓🍌🫐🟡
+</span>
+<h4>
+Frutas y Sabores
+</h4>
+<p>
+Fresa, plátano, arándano y lúcuma se
+utilizan en diferentes combinaciones
+según el producto.
+</p>
+</article>
+<article
+class="base-card animar-scroll retraso-3"
+>
+<span
+class="base-emoji"
+aria-hidden="true"
+>
+🌱
+</span>
+<h4>
+Chía
+</h4>
+<p>
+Ingrediente complementario que puede
+incorporarse principalmente al vaso de yogur.
+</p>
+</article>
+<article
+class="base-card animar-scroll retraso-4"
+>
+<span
+class="base-emoji"
+aria-hidden="true"
+>
+🌾
+</span>
+<h4>
+Granola
+</h4>
+<p>
+Puede utilizarse como topping del vaso
+para proporcionar una textura crujiente.
+</p>
+</article>
+<article
+class="base-card animar-scroll retraso-5"
+>
+<span
+class="base-emoji"
+aria-hidden="true"
+>
+🍯
+</span>
+<h4>
+Miel
+</h4>
+<p>
+Puede utilizarse en pequeñas cantidades
+si la preparación necesita mayor dulzor.
+No es obligatoria.
+</p>
+</article>
+</div>
+</div>
+</section>
+<!-- ============================================================
+SECCIÓN 6: ¿POR QUÉ LOS CREAMOS?
+============================================================ -->
+<section
+id="por-que"
+class="seccion"
+aria-label="Por qué creamos estos productos"
+>
+<div class="contenedor">
+<div class="seccion-titulo animar-scroll">
+<h2>
+¿Por qué nace nuestra propuesta?
+</h2>
+<p>
+El origen de la idea detrás de
+nuestros dos postres.
+</p>
+</div>
+<div
+class="linea-proceso"
+role="list"
+aria-label="Proceso de creación"
+>
+<div
+class="proceso-paso animar-scroll retraso-1"
+role="listitem"
+>
+<div
+class="proceso-numero"
+aria-hidden="true"
+>
+💡
+</div>
+<p class="proceso-titulo">
+Necesidad
+</p>
+<p class="proceso-descripcion">
+Crear alternativas de postre que
+combinen sabor, fruta y una
+presentación atractiva.
+</p>
+</div>
+<div
+class="proceso-paso animar-scroll retraso-2"
+role="listitem"
+>
+<div
+class="proceso-numero"
+aria-hidden="true"
+>
+🌱
+</div>
+<p class="proceso-titulo">
+Idea
+</p>
+<p class="proceso-descripcion">
+Utilizar yogur como base para crear
+dos productos con diferentes
+combinaciones de sabores.
+</p>
+</div>
+<div
+class="proceso-paso animar-scroll retraso-3"
+role="listitem"
+>
+<div
+class="proceso-numero"
+aria-hidden="true"
+>
+🧪
+</div>
+<p class="proceso-titulo">
+Propuesta
+</p>
+<p class="proceso-descripcion">
+Combinar fresa, plátano y arándano
+en el vaso; y fresa, plátano y
+lúcuma en las paletas.
+</p>
+</div>
+<div
+class="proceso-paso animar-scroll retraso-4"
+role="listitem"
+>
+<div
+class="proceso-numero"
+aria-hidden="true"
+>
+🎯
+</div>
+<p class="proceso-titulo">
+Resultado
+</p>
+<p class="proceso-descripcion">
+Dos productos relacionados por su
+base de yogur y frutas, pero con
+sabores y presentaciones diferentes.
+</p>
+</div>
+</div>
+<div class="porque-resultado animar-scroll">
+<span
+class="etiqueta etiqueta-verde"
+style="margin-bottom:16px;display:inline-block"
+>
+Un solo proyecto. Dos productos.
+</span>
+<h3 style="margin-bottom:12px">
+Dos propuestas que se complementan
+</h3>
+<p
+style="max-width:550px;margin:0 auto 24px"
+>
+Ambos productos utilizan
+<strong>yogur y frutas</strong>
+como base del concepto.
+El vaso utiliza
+<strong>fresa, plátano y arándano</strong>,
+mientras que las paletas utilizan
+<strong>fresa, plátano y lúcuma</strong>.
+</p>
+<div
+class="porque-productos"
+aria-label="Los dos productos del proyecto"
+>
+<div class="porque-producto">
+<span
+class="emoji-grande"
+aria-hidden="true"
+>
+🥗
+</span>
+<h4>
+Vaso de Yogur
+<br>
+con Frutas
+</h4>
+<p>
+🍓 🍌 🫐
+</p>
+</div>
+<div
+class="porque-mas"
+aria-hidden="true"
+>
++
+</div>
+<div class="porque-producto">
+<span
+class="emoji-grande"
+aria-hidden="true"
+>
+🍦
+</span>
+<h4>
+Paletas Congeladas
+<br>
+de Yogur
+</h4>
+<p>
+🍓 🍌 🟡
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+SECCIÓN 7: COMPARACIÓN
+============================================================ -->
+<section
+id="comparacion"
+class="seccion"
+aria-label="Comparación con postres tradicionales"
+>
+<div class="contenedor">
+<div class="seccion-titulo animar-scroll">
+<h2>
+¿Qué diferencia nuestra propuesta?
+</h2>
+<p>
+Una comparación responsable y honesta.
+</p>
+</div>
+<div class="comparacion-contenedor">
+<!-- POSTRE TRADICIONAL -->
+<article
+class="comparacion-columna animar-scroll-izq"
+aria-label="Postre tradicional"
+>
+<div class="comparacion-cabecera">
+<span
+class="emoji-grande"
+aria-hidden="true"
+>
+🍰
+</span>
+<h3>
+Postre Tradicional
+</h3>
+<span
+class="etiqueta"
+style="background:#f0f0f0;color:#666"
+>
+Ejemplo general
+</span>
+</div>
+<ul class="comparacion-lista">
+<li class="comparacion-item">
+<span
+class="comp-icono"
+aria-hidden="true"
+>
+📋
+</span>
+La composición depende de la receta específica
+</li>
+<li class="comparacion-item">
+<span
+class="comp-icono"
+aria-hidden="true"
+>
+🍬
+</span>
+Algunos pueden contener cantidades
+elevadas de azúcar añadida
+</li>
+<li class="comparacion-item">
+<span
+class="comp-icono"
+aria-hidden="true"
+>
+🌾
+</span>
+Algunos utilizan principalmente
+harinas, azúcares o cremas
+</li>
+<li class="comparacion-item">
+<span
+class="comp-icono"
+aria-hidden="true"
+>
+🍎
+</span>
+Pueden contener o no frutas
+según la receta
+</li>
+<li class="comparacion-item">
+<span
+class="comp-icono"
+aria-hidden="true"
+>
+📊
+</span>
+Su composición nutricional
+varía según los ingredientes
+</li>
+</ul>
+</article>
+<div
+class="comparacion-vs"
+aria-hidden="true"
+>
+<div class="vs-badge">
+VS
+</div>
+</div>
+<!-- NUESTRA PROPUESTA -->
+<article
+class="comparacion-columna nuestra animar-scroll-der"
+aria-label="Nuestra propuesta"
+>
+<div class="comparacion-cabecera">
+<span
+class="emoji-grande"
+aria-hidden="true"
+>
+🍓
+</span>
+<h3>
+Nuestra Propuesta
+</h3>
+<span class="etiqueta etiqueta-fresa">
+Yogur + Frutas
+</span>
+</div>
+<ul class="comparacion-lista">
+<li class="comparacion-item">
+<span
+class="comp-icono"
+aria-hidden="true"
+>
+🥛
+</span>
+Yogur como base cremosa
+</li>
+<li class="comparacion-item">
+<span
+class="comp-icono"
+aria-hidden="true"
+>
+🍓
+</span>
+Frutas utilizadas como protagonistas
+del sabor y presentación
+</li>
+<li class="comparacion-item">
+<span
+class="comp-icono"
+aria-hidden="true"
+>
+🥗
+</span>
+Vaso: fresa, plátano y arándano
+</li>
+<li class="comparacion-item">
+<span
+class="comp-icono"
+aria-hidden="true"
+>
+🍦
+</span>
+Paletas: fresa, plátano y lúcuma
+</li>
+<li class="comparacion-item">
+<span
+class="comp-icono"
+aria-hidden="true"
+>
+🎨
+</span>
+Diferentes sabores, texturas
+y presentaciones
+</li>
+<li class="comparacion-item">
+<span
+class="comp-icono"
+aria-hidden="true"
+>
+🍬
+</span>
+Posibilidad de controlar
+el azúcar añadida
+</li>
+</ul>
+</article>
+</div>
+<p class="comparacion-nota animar-scroll">
+⚠️ La composición final depende de las
+cantidades, ingredientes y porciones utilizadas.
+Esta comparación no busca afirmar que todos
+los postres tradicionales sean negativos.
+</p>
+</div>
+</section>
+<!-- ============================================================
+SECCIÓN 8: ¿CUÁL PREFIERES?
+============================================================ -->
+<section
+id="preferencia"
+class="seccion"
+aria-label="¿Cuál probarías primero?"
+>
+<div class="contenedor">
+<div class="seccion-titulo animar-scroll">
+<h2>
+¿Cuál probarías primero?
+</h2>
+<p>
+Elige la combinación que más te
+llame la atención.
+</p>
+</div>
+<div class="preferencia-grid">
+<article
+class="preferencia-card animar-scroll-izq"
+aria-label="Vaso de yogur con frutas"
+>
+<span
+class="preferencia-emoji"
+aria-hidden="true"
+>
+🥗
+</span>
+<h3>
+Vaso de Yogur
+<br>
+con Frutas
+</h3>
+<p style="margin-bottom:18px">
+🍓 Fresa · 🍌 Plátano · 🫐 Arándano
+</p>
+<button
+class="btn btn-primario btn-completo btn-eleccion"
+data-producto="vaso"
+aria-label="Elegir el vaso de yogur"
+>
+Yo elijo este 🥗
+</button>
+<p
+class="mensaje-gracias"
+aria-live="polite"
+>
+¡Gracias por elegir! 🎉
+</p>
+</article>
+<article
+class="preferencia-card animar-scroll-der"
+aria-label="Paleta de yogur con frutas"
+>
+<span
+class="preferencia-emoji"
+aria-hidden="true"
+>
+🍦
+</span>
+<h3>
+Paleta de Yogur
+<br>
+con Frutas
+</h3>
+<p style="margin-bottom:18px">
+🍓 Fresa · 🍌 Plátano · 🟡 Lúcuma
+</p>
+<button
+class="btn btn-secundario btn-completo btn-eleccion"
+data-producto="paleta"
+aria-label="Elegir la paleta de yogur"
+>
+Yo elijo este 🍦
+</button>
+<p
+class="mensaje-gracias"
+aria-live="polite"
+>
+¡Gracias por elegir! 🎉
+</p>
+</article>
+</div>
+</div>
+</section>
+<!-- ============================================================
+SECCIÓN 9: PROTOTIPOS
+============================================================ -->
+<section
+id="prototipos"
+class="seccion"
+aria-label="Prototipos del proyecto"
+>
+<div class="contenedor">
+<div class="seccion-titulo animar-scroll">
+<span
+class="etiqueta etiqueta-fresa"
+style="margin-bottom:16px;display:inline-block"
+>
+PROTOTIPOS DEL PROYECTO
+</span>
+<h2>
+Nuestros Prototipos
+</h2>
+<p>
+Los dos productos que conforman
+nuestro proyecto.
+</p>
+</div>
+<div class="prototipos-grid">
+<!-- VASO -->
+<article
+class="prototipo-card animar-scroll-izq"
+aria-label="Prototipo del vaso de yogur"
+>
+<div
+class="imagen-placeholder imagen-placeholder-vaso"
+style="border-radius:24px 24px 0 0"
+role="img"
+aria-label="Espacio para foto del prototipo del vaso"
+>
+<span class="emoji-placeholder">
+🥗
+</span>
+<strong>
+Foto de tu prototipo
+</strong>
+<span>
+imagenes/ensalada/vaso-principal.jpg
+</span>
+</div>
+<div class="prototipo-cuerpo">
+<span
+class="emoji-grande"
+aria-hidden="true"
+>
+🥗
+</span>
+<h3>
+Vaso de Yogur con Frutas
+</h3>
+<p
+style="font-size:.9rem;color:#6B6057"
+>
+🍓 Fresa · 🍌 Plátano · 🫐 Arándano
+</p>
+<span class="prototipo-etiqueta">
+Prototipo del Proyecto
+</span>
+</div>
+</article>
+<!-- PALETAS -->
+<article
+class="prototipo-card animar-scroll-der"
+aria-label="Prototipo de las paletas de yogur"
+>
+<div
+class="imagen-placeholder imagen-placeholder-paleta"
+style="border-radius:24px 24px 0 0"
+role="img"
+aria-label="Espacio para foto del prototipo de las paletas"
+>
+<span class="emoji-placeholder">
+🍦
+</span>
+<strong>
+Foto de tu prototipo
+</strong>
+<span>
+imagenes/paletas/paleta-principal.jpg
+</span>
+</div>
+<div class="prototipo-cuerpo">
+<span
+class="emoji-grande"
+aria-hidden="true"
+>
+🍦
+</span>
+<h3>
+Paletas Congeladas de Yogur
+</h3>
+<p
+style="font-size:.9rem;color:#6B6057"
+>
+🍓 Fresa · 🍌 Plátano · 🟡 Lúcuma
+</p>
+<span class="prototipo-etiqueta">
+Prototipo del Proyecto
+</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ============================================================
+SECCIÓN 10: CREADORES
+============================================================ -->
+<section
+id="creadores"
+class="seccion"
+aria-label="Creadores del proyecto"
+>
+<div class="contenedor">
+<div class="seccion-titulo animar-scroll">
+<h2>
+Creadores del Proyecto
+</h2>
+<p>
+El equipo detrás de esta propuesta.
+</p>
+</div>
+<div class="creadores-grid">
+<article
+class="creador-card animar-scroll retraso-1"
+>
+<div
+class="creador-avatar"
+aria-hidden="true"
+>
+🍓
+</div>
+<h4>
+Edgar Ramón Fernández Aguilar
+</h4>
+<p>
+Integrante del equipo
+</p>
+</article>
+<article
+class="creador-card animar-scroll retraso-2"
+>
+<div
+class="creador-avatar"
+aria-hidden="true"
+>
+🍌
+</div>
+<h4>
+Nombre del Integrante 2
+</h4>
+<p>
+Integrante del equipo
+</p>
+</article>
+<article
+class="creador-card animar-scroll retraso-3"
+>
+<div
+class="creador-avatar"
+aria-hidden="true"
+>
+🫐
+</div>
+<h4>
+Nombre del Integrante 3
+</h4>
+<p>
+Integrante del equipo
+</p>
+</article>
+<article
+class="creador-card animar-scroll retraso-4"
+>
+<div
+class="creador-avatar"
+aria-hidden="true"
+>
+🟡
+</div>
+<h4>
+Nombre del Integrante 4
+</h4>
+<p>
+Integrante del equipo
+</p>
+</article>
+</div>
+<div class="creadores-anio animar-scroll">
+<p>
+<strong>
+Proyecto Final
+</strong>
+</p>
+<p>
+Postres de Yogur con Frutas
+</p>
+<p>
+<strong>
+2026
+</strong>
+</p>
+</div>
+</div>
+</section>
+<!-- ============================================================
+SECCIÓN 11: QR
+============================================================ -->
+<section
+id="seccion-qr"
+aria-label="Código QR del proyecto"
+>
+<div class="contenedor">
+<h2>
+Conoce Nuestro Proyecto
+</h2>
+<p>
+Escanea nuestro código QR y conoce
+nuestra propuesta.
+</p>
+<div class="qr-contenedor">
+<div
+class="qr-placeholder"
+id="qr-placeholder"
+role="img"
+aria-label="Código QR pendiente"
+>
+<span
+class="qr-emoji"
+aria-hidden="true"
+>
+📱
+</span>
+<p>
+CÓDIGO QR
+<br>
+DISPONIBLE AL
+<br>
+PUBLICAR LA PÁGINA
+</p>
+</div>
+<img
+id="qr-imagen"
+class="qr-imagen"
+src="recursos/codigo-qr.png"
+alt="Código QR del proyecto"
+style="display:none"
+onload="
+this.style.display='block';
+document.getElementById('qr-placeholder').style.display='none';
+"
+onerror="
+this.style.display='none';
+"
+>
+<p class="qr-texto">
+Proyecto Final 2026 ·
+Postres de Yogur y Frutas
+</p>
+</div>
+</div>
+</section>
+<!-- ============================================================
+FOOTER
+============================================================ -->
+<footer role="contentinfo">
+<span
+class="footer-frutas"
+aria-hidden="true"
+>
+🍓 🍌 🫐 🟡
+</span>
+<p class="footer-titulo">
+Proyecto Final 2026
+</p>
+<p class="footer-subtitulo">
+Vaso: Fresa, Plátano y Arándano
+·
+Paletas: Fresa, Plátano y Lúcuma
+</p>
+<p class="footer-subtitulo">
+Vaso de yogur con frutas ·
+Paletas congeladas de yogur con frutas
+</p>
+<p class="footer-nota">
+Desarrollado con fines académicos.
+</p>
+</footer>
+<!-- ============================================================
+JAVASCRIPT
+============================================================ -->
+<script src="funciones/principal.js"></script>
+<script src="funciones/recomendador.js"></script>
+</body>
+</html>
