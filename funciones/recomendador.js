@@ -1,3 +1,4 @@
+  console.log("RECOMENDADOR CARGADO CORRECTAMENTE");
 /* =========================================================
    RECOMENDADOR DE POSTRES
    Proyecto: Postres de Yogur con Frutas
@@ -114,7 +115,7 @@ function calcularRecomendacion(respuestas) {
   let puntajePaleta = 0;
 
   // --- Pregunta 1: Tipo de postre ---
-  if (respuestas.tipoPosre === 'cremoso') {
+  if (respuestas.tipoPostre === 'cremoso') {
     puntajeVaso   += 3;
   } else if (respuestas.tipoPostre === 'frio') {
     puntajePaleta += 3;

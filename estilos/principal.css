@@ -248,6 +248,27 @@ p {
   border-color: var(--color-arandano-claro);
   min-height: 380px;
 }
+/* ---------------------------------------------------------
+   IMÁGENES REALES DE LOS PRODUCTOS
+   --------------------------------------------------------- */
+
+.imagen-placeholder.imagen-real {
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  min-height: 380px;
+  height: 380px;
+}
+
+.imagen-placeholder.imagen-real .foto-producto {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radio-medio);
+}
+
 
 /* ---------------------------------------------------------
    BOTONES
@@ -752,11 +773,13 @@ p {
   color: var(--color-fresa);
 }
 
-.opcion-radio:checked + .opcion-label {
+    /* Opción seleccionada */
+ .opcion-label:has(.opcion-radio:checked) {
   border-color: var(--color-fresa);
   background: var(--color-fresa-suave);
   color: var(--color-fresa);
   font-weight: 600;
+  box-shadow: 0 4px 15px rgba(232, 54, 93, 0.15);
 }
 
 .opcion-icono {
@@ -850,6 +873,7 @@ p {
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
+
 
 .sabor-card {
   background: var(--color-blanco);
@@ -1347,22 +1371,167 @@ p {
 }
 
 .creadores-anio {
+  position: relative;
+  max-width: 650px;
+  margin: 55px auto 0;
+  padding: 55px 45px 45px;
+
   text-align: center;
-  padding: 20px;
-  background: var(--color-gris-suave);
-  border-radius: var(--radio-medio);
-  max-width: 400px;
-  margin: 0 auto;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at top left,
+      rgba(255, 255, 255, 0.9),
+      transparent 35%),
+    linear-gradient(
+      135deg,
+      #fff0f4 0%,
+      #ffffff 45%,
+      #f2edff 100%
+    );
+
+  border: 1px solid rgba(232, 54, 93, 0.25);
+  border-radius: 35px;
+
+  box-shadow:
+    0 25px 60px rgba(74, 45, 90, 0.16),
+    0 8px 25px rgba(232, 54, 93, 0.15);
+
+  transition: all 0.4s ease;
 }
 
-.creadores-anio p {
-  font-size: 0.9rem;
+.creadores-anio:hover {
+  transform: translateY(-8px) scale(1.01);
+
+  box-shadow:
+    0 30px 70px rgba(74, 45, 90, 0.20),
+    0 12px 30px rgba(232, 54, 93, 0.22);
+}
+
+
+/* INSIGNIA SUPERIOR */
+
+.proyecto-insignia {
+  display: inline-block;
+
+  padding: 9px 22px;
+  margin-bottom: 22px;
+
+  background: var(--gradiente-fresa);
+  color: white;
+
+  border-radius: 50px;
+
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  box-shadow: var(--sombra-fresa);
+}
+
+
+/* TÍTULO */
+
+.proyecto-titulo {
+  font-size: 2.1rem;
+  line-height: 1.15;
+  margin-bottom: 14px;
+
+  color: var(--color-texto);
+}
+
+.proyecto-titulo span {
+  display: block;
+  color: var(--color-fresa);
+}
+
+
+/* DESCRIPCIÓN */
+
+.proyecto-descripcion {
+  font-size: 0.95rem;
   color: var(--color-gris-texto);
-  margin-bottom: 4px;
+
+  margin: 0 auto 25px;
+}
+
+
+/* CARACTERÍSTICAS */
+
+.proyecto-detalles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.proyecto-detalles span {
+  padding: 8px 16px;
+
+  background: white;
+
+  border: 1px solid rgba(232, 54, 93, 0.12);
+  border-radius: 50px;
+
+  font-size: 0.82rem;
+  font-weight: 600;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+/* AÑO */
+
+.proyecto-anio {
+  display: inline-block;
+
+  padding: 10px 30px;
+
+  background: var(--gradiente-arandano);
+  color: white;
+
+  border-radius: 50px;
+
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+
+  box-shadow: var(--sombra-arandano);
+}
+
+
+/* FRUTAS DECORATIVAS */
+
+.proyecto-decoracion {
+  position: absolute;
+
+  font-size: 5rem;
+  opacity: 0.10;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+.proyecto-fresa {
+  top: 20px;
+  left: 25px;
+
+  transform: rotate(-18deg);
+}
+
+.proyecto-arandano {
+  right: 25px;
+  bottom: 20px;
+
+  transform: rotate(15deg);
 }
 
 .creadores-anio strong {
+  display: inline-block;
   color: var(--color-fresa);
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 /* ---------------------------------------------------------
